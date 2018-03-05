@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    {% for row in table %}
+    <tr>
+        <td>
+            {{ row['Year'] }}
+        </td>
+        <td>
+            {{ row['Quarter'] }}
+        </td>
+        <td>
+            {{ row['Value'] }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

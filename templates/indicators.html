@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for name in names %}
+    <li>
+        <a href="{{ url_for('show_indicator',
+                            index=loop.index0) }}">
+        {{ name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
